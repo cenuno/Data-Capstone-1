@@ -14,7 +14,7 @@ barplot( height = sort( table( as.factor( newyork_state$type_description ) ) )
 )
 # draw vertical lines
 # Add vertical lines to separate the years
-abline( v = c(1000, 2000, 3000, 4000)
+abline( v = seq( from = 1000, to = 4000, by = 1000)
         , col = "gray"
         , lty = 2
 )
